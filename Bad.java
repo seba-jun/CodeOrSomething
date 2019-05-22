@@ -4,17 +4,20 @@ public class Bad {
 	public static void main(String[] args)
 	{
 		Scanner scan = new Scanner(System.in);
-		
-		System.out.print("Type two integers");
-		int n = scan.nextLine();
+		//I like println better. And : . Should only be one int.
+		System.out.println("Type one integers: ");
+                //Should be nextInt.
+		int n = scan.nextInt();
 		int divisors = 0;
-		for ( int i = 0; i < n; n++ )
+                //Should be i++.
+		for ( int i = 0; i < n; i++ )
 		{
 			if ( n % i == 0 )
 			{
 				divisors += i;
 			}
 		}
-		System.out.println("All of the divisors summed together is + divisors");
+                //Wow I can't believe you put the quotes in the wrong place.
+		System.out.println("All of the divisors summed together is " + divisors);
 	}
 }
